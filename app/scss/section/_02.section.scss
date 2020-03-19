@@ -1,245 +1,250 @@
 .description {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: row;
-   background: #E5E5E5;
-   padding-top: 300px;
-   padding-bottom: 100px;
-      &__content {
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
-         width: 1015 / 1920 * 100%;
-         @media only screen and (max-width: 750px) {
-            flex-wrap: wrap;
-            margin: 20px;
-            
-         }
-      }
-		&__column {
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-         align-items: center;
-         width: 255px;
-         
-         &:last-child {
-            margin-left: 30px;
-            & .about:last-child {
-               margin-bottom: 20px;
-            }
-         }
-			&_big {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 350px;
-            margin-right: 125px;
-            width: 350px;
-            @media only screen and (max-width: 1024px) {
-               margin-right: 50px;
-            }
-            @media only screen and (max-width: 750px) {
-               margin-right: 0px;
-            }
-			}
-		}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: #e5e5e5;
+  padding-top: 300px;
+  padding-bottom: 100px;
 
-		&__about {
-
-			&_big {
-			}
-		}
-}
-.about {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-
-		&__logo {
-         display: flex;
-         flex-direction: row;
-         margin-bottom: 20px;
-         justify-content: center;
-         align-items: flex-end;
-
-         & img {
-            margin-right: 20px;
-         }
-         & h3 {
-            vertical-align: middle;
-            text-align: center;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 135%;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            color: #000000;
-         }
-      }
-      p {
-         font-family: Montserrat;
-         font-style: normal;
-         font-weight: 300;
-         font-size: 14px;
-         line-height: 135%;
-         color: #616161;
-         text-transform: none;
-         text-align: left;
-         margin-bottom: 35px;
-      }
-}
-.galery {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   padding-top: 120px;
-   padding-bottom: 150px;
-		
-		&__image {
-         padding: 15px;
-		}
-
-		&__column {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-		}
-}
-.row {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   max-width: 100%;
-   @media only screen and (max-width: 700px) {
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1015 / 1920 * 100%;
+    @media only screen and (max-width: 750px) {
       flex-wrap: wrap;
-   }
+      margin: 20px;
+    }
+  }
 
+  &__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 255px;
+
+    &:last-child {
+      margin-left: 30px;
+
+      & .about:last-child {
+        margin-bottom: 20px;
+      }
+    }
+
+    &_big {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      margin-right: 125px;
+      width: 350px;
+
+      @media only screen and (max-width: 1024px) {
+        margin-right: 50px;
+      }
+
+      @media only screen and (max-width: 750px) {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  &__about {
+    &_big {
+    }
+  }
 }
-.logo {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   padding: 85px;
-   @media only screen and (max-width: 1024px) {
-      padding: 0 85px;
-   }
-   @media only screen and (max-width: 700px) {
-      padding:0 150px ;
-   }
-   @media only screen and (max-width: 400px) {
-      padding:0 50px ;
-   }
-      & h3{
-         font-family: Montserrat;
-         font-style: normal;
-         font-weight: 300;
-         font-size: 24px;
-         line-height: 135%;
-         text-align: center;
-         text-transform: uppercase;
-         color: #000000;
-         margin-bottom: 25px;
-      }
-      & img {
-         margin-bottom: 10px;
-      }
-      & p {
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: flex-end;
+
+    & img {
+      margin-right: 20px;
+    }
+    & h3 {
+      vertical-align: middle;
+      text-align: center;
       font-family: Montserrat;
       font-style: normal;
       font-weight: 300;
-      font-size: 9px;
-      line-height: 11px;
-      text-align: center;
-      letter-spacing: 0.03em;
+      font-size: 16px;
+      line-height: 135%;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
       color: #000000;
-      }
+    }
+  }
+  p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 135%;
+    color: #616161;
+    text-transform: none;
+    text-align: left;
+    margin-bottom: 35px;
+    max-width: 100%;
+  }
+}
+.galery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 150px;
+
+  &__image {
+    padding: 15px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  @media only screen and (max-width: 700px) {
+    flex-wrap: wrap;
+  }
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 85px;
+  @media only screen and (max-width: 1024px) {
+    padding: 0 85px;
+  }
+  @media only screen and (max-width: 700px) {
+    padding: 0 150px;
+  }
+  @media only screen and (max-width: 400px) {
+    padding: 0 50px;
+  }
+  & h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 135%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 25px;
+  }
+  & img {
+    margin-bottom: 10px;
+  }
+  & p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 11px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #000000;
+  }
 }
 .image {
-   max-width: 100%;
-   @media only screen and (max-width: 900px) {
-      padding: 10px;
-   }
-   @media only screen and (max-width: 700px) {
-      width: 350px;;
-   }
-   @media only screen and (max-width: 400px) {
-      width: 300px;;
-   }
+  max-width: 100%;
+  @media only screen and (max-width: 900px) {
+    padding: 10px;
+  }
+  @media only screen and (max-width: 700px) {
+    width: 350px;
+  }
+  @media only screen and (max-width: 400px) {
+    width: 300px;
+  }
 
-   & img {
-      object-fit: cover;
-      max-width: 100%;
-   }
+  & img {
+    object-fit: cover;
+    max-width: 100%;
+  }
 }
 .info {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-   background: url(../img/background.png) no-repeat;
-   block-size: cover;
-   height: 410px;
-      & h1 {
-         font-family: Montserrat;
-         font-style: normal;
-         font-weight: 300;
-         font-size: 36px;
-         line-height: 145%;
-         letter-spacing: 0.05em;
-         text-transform: uppercase;
-         color: #FFFFFF;
-         margin-bottom: 70px;
-         @media only screen and (max-width: 720px) {
-           font-size: 24px;
-            line-height: 100%; 
-         }
-      }
-		&__button {
-		}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: url(../img/background.png) no-repeat;
+  block-size: cover;
+  height: 410px;
+  & h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 70px;
+    @media only screen and (max-width: 720px) {
+      font-size: 24px;
+      line-height: 100%;
+    }
+  }
+  &__button {
+  }
 }
 .button {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   @media only screen and (max-width: 720px) {
-      flex-wrap: wrap;
-   }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (max-width: 720px) {
+    flex-wrap: wrap;
+  }
 
-      & button{
-         padding: 20px 45px;
-         margin: 0 45px;
-         background: #FFFFFF;
-         border: none;
-         font-family: Montserrat;
-         font-style: normal;
-         font-weight: 300;
-         font-size: 16px;
-         line-height: 20px;
-         text-align: center;
-         letter-spacing: 0.05em;
-         text-transform: uppercase;
-         color: #000000;
-         @media only screen and (max-width: 720px) {
-            font-size: 10px;
-            line-height: 100%; 
-         }
-         @media only screen and (max-width: 571px) {
-               margin-bottom: 20px; 
-               width: 250px;
-         }
+  & button {
+    padding: 20px 45px;
+    margin: 0 45px;
+    background: #ffffff;
+    border: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+    @media only screen and (max-width: 720px) {
+      font-size: 10px;
+      line-height: 100%;
     }
+    @media only screen and (max-width: 571px) {
+      margin-bottom: 20px;
+      width: 250px;
+    }
+  }
 }
-
